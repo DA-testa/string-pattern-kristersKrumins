@@ -15,8 +15,8 @@ def read_input():
 
 
 def print_occurrences(output):
-    print(' '.join(map(str, ot)))
-
+    print(' '.join(map(str, output)))
+    
 def get_hash(txt):
     x=13
     y=256
@@ -32,7 +32,7 @@ def get_occurrences(pat, txt):
         if get_hash(txt[i:i+len(pat)])==get_hash(pat):
             if txt[i:i+len(pat)]==pat:
                 ot.append(i)
-    return [0]
+    return [ot]
 
 
 # this part launches the functions
