@@ -18,7 +18,7 @@ def get_hash(txt):
     l=len(txt)
     res=0
     for i in range(l):
-    res = (x*res+ord(txt[i])) % y
+        res = (x*res+ord(txt[i])) % y
     return res
 
 def print_occurrences(output):
