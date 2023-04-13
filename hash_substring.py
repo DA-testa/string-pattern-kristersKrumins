@@ -32,7 +32,7 @@ def get_occurrences(pat, txt):
         if get_hash(txt[i:i+len(pat)])==get_hash(pat):
             if txt[i:i+len(pat)]==pat:
                 ot.append(i)
-    return [ot]
+    return ot
 
 
 # this part launches the functions
