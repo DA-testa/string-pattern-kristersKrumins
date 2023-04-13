@@ -12,6 +12,11 @@ def read_input():
 
     return (pat, txt)
 
+
+
+def print_occurrences(output):
+    print(' '.join(map(str, output)))
+    
 def get_hash(txt):
     x=13
     y=256
@@ -20,10 +25,6 @@ def get_hash(txt):
     for i in range(l):
         res = (x*res+ord(txt[i])) % y
     return res
-
-def print_occurrences(output):
-    print(' '.join(map(str, output)))
-
 
 def get_occurrences(pat, txt):
     ot=[]
